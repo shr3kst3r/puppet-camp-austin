@@ -13,7 +13,7 @@ describe 'puppet-camp-austin::example3' do
         let(:facts) { {:operatingsystem => 'MINIX'} }
 
         it 'should notify a warning' do
-            should contain_notify('git cannot be install for this package')
+            should contain_notify('git cannot be install for this platform')
         end
     end
 end
